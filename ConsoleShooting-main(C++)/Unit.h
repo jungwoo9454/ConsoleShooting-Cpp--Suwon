@@ -13,11 +13,11 @@ public:	// private, protected
 	WORD bColor;
 
 	virtual void Update();		//가상함수
-	void Draw();
+	virtual void Draw();
 
 	virtual void Move();
 	virtual void Clipping();
 
-	void Enable(int x, int y);
+	virtual void Enable(int x, int y);
 	void Disable();
 };

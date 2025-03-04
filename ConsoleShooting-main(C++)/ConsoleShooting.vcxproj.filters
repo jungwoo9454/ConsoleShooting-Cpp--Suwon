@@ -28,6 +28,9 @@
     <Filter Include="Unit">
       <UniqueIdentifier>{f7880b4a-1d6b-4734-b328-cca4de2c9920}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Effect">
+      <UniqueIdentifier>{05040d1d-b958-482e-b1f0-84aff97226e1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -51,6 +54,9 @@
     <ClCompile Include="Unit.cpp">
       <Filter>Unit</Filter>
     </ClCompile>
+    <ClCompile Include="Effect.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include.h">
@@ -73,6 +79,9 @@
     </ClInclude>
     <ClInclude Include="Unit.h">
       <Filter>Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect.h">
+      <Filter>Effect</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
