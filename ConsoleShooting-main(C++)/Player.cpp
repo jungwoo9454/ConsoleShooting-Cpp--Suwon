@@ -19,7 +19,7 @@ void Player::Update()
 	Clipping();
 
 	if (GetAsyncKeyState(VK_SPACE))
-		CreateBullet(x, y);
+		gameMng.CreateBullet(x, y);
 }
 
 void Player::Draw()

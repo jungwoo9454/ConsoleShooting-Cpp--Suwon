@@ -5,6 +5,9 @@
 
 #include "Player.h"
 #include "Bullet.h"
+#include "Enemy.h"
+
+#include "GameMng.h"
 
 void Init();
 void Update();
@@ -16,3 +19,5 @@ void DrawChar(int x, int y, const char c, WORD fcolor, WORD bcolor);
 void EngineSync(int fps);
 void ClearScreen();
 void Flip();
+
+extern GameMng gameMng;

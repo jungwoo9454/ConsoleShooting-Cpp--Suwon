@@ -1,5 +1,4 @@
 #include "include.h"
-Bullet bullets[D_BULLET_MAX];
 
 Bullet::Bullet()
 {
@@ -26,15 +25,19 @@ void Bullet::Update()
 
 void Bullet::Draw()
 {
-	DrawChar(x, y, body, fColor, bColor);
+	if(isAlive)
+		DrawChar(x, y, body, fColor, bColor);
 }
 
 void Bullet::Move()
 {
+	y--;
 }
 
 void Bullet::Clipping()
 {
+	if (y < 0)
+		Disable();
 }
 
 void Bullet::Enable(int x, int y)
@@ -47,8 +50,4 @@ void Bullet::Enable(int x, int y)
 void Bullet::Disable()
 {
 	isAlive = false;
-}
-
-void CreateBullet(int x, int y)
-{
 }

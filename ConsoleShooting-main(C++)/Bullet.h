@@ -21,5 +21,3 @@ public:
 	void Enable(int x, int y);
 	void Disable();
 };
-
-void CreateBullet(int x, int y);
