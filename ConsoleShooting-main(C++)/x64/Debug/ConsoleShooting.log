@@ -1,2 +1,2 @@
-﻿  Bullet.cpp
-LINK : fatal error LNK1168: C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Cpp--Suwon\ConsoleShooting-main(C++)\x64\Debug\ConsoleShooting.exe을(를) 쓰기용으로 열 수 없습니다.
+﻿  Player.cpp
+  ConsoleShooting.vcxproj -> C:\Users\User\Desktop\기초코딩 수업 자료\ConsoleShooting-Cpp--Suwon\ConsoleShooting-main(C++)\x64\Debug\ConsoleShooting.exe

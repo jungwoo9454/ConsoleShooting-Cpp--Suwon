@@ -25,6 +25,9 @@
     <Filter Include="Enemy">
       <UniqueIdentifier>{1f8265e3-4075-401c-92e6-2ba08ab5a0fc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Unit">
+      <UniqueIdentifier>{f7880b4a-1d6b-4734-b328-cca4de2c9920}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -45,6 +48,9 @@
     <ClCompile Include="Enemy.cpp">
       <Filter>Enemy</Filter>
     </ClCompile>
+    <ClCompile Include="Unit.cpp">
+      <Filter>Unit</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include.h">
@@ -64,6 +70,9 @@
     </ClInclude>
     <ClInclude Include="Enemy.h">
       <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
+      <Filter>Unit</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

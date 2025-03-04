@@ -2,11 +2,10 @@
 
 Player::Player()
 {
+	isAlive = true;
 	x = 60;
 	y = 15;
 	body = 'A';
-	fColor = WHITE;
-	bColor = BLACK;
 }
 
 Player::~Player()
@@ -15,16 +14,10 @@ Player::~Player()
 
 void Player::Update()
 {
-	Move();
-	Clipping();
+	Unit::Update();
 
 	if (GetAsyncKeyState(VK_SPACE))
 		gameMng.CreateBullet(x, y);
-}
-
-void Player::Draw()
-{
-	DrawChar(x, y, body, fColor, bColor);
 }
 
 void Player::Move()
