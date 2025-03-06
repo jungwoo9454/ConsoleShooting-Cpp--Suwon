@@ -17,7 +17,7 @@ void Player::Update()
 	Unit::Update();
 
 	if (GetAsyncKeyState(VK_SPACE))
-		gameMng.CreateBullet(x, y);
+		GameMng::GetIns()->CreateBullet(x, y);
 }
 
 void Player::Move()

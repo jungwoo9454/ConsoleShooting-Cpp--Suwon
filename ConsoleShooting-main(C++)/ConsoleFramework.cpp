@@ -2,7 +2,6 @@
 
 int screenIndex;
 HANDLE hScreen[2];
-GameMng gameMng;
 
 void Init()
 {
@@ -19,12 +18,12 @@ void Init()
 }
 void Update()
 {
-	gameMng.Update();
+	GameMng::GetIns()->Update();
 }
 void Draw()
 {
 	ClearScreen();
-	gameMng.Draw();
+	GameMng::GetIns()->Draw();
 	Flip();
 }
 void Release()

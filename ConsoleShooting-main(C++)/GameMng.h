@@ -1,5 +1,13 @@
 #pragma once
-class GameMng
+
+// 상속 -> 중복 코드 제거
+// 싱글톤 -> GameMng 업그레이드
+// 유한상태기계(FSM) -> 메뉴화면,게임화면
+// FMOD -> 사운드
+// 자료구조(스택,큐,리스트) 구현
+// 오브젝트 풀링 업그레이드
+
+class GameMng : public Singleton<GameMng>
 {
 public:
 	GameMng();
@@ -9,6 +17,7 @@ public:
 	Bullet bullets[D_BULLET_MAX];
 	Enemy enemys[D_ENEMY_MAX];
 	Effect effects[D_EFFECT_MAX];
+	Text text;
 
 	DWORD createEnemyTime;
 
