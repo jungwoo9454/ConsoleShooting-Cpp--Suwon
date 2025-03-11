@@ -40,6 +40,12 @@
     <Filter Include="State">
       <UniqueIdentifier>{cd03440a-6930-40e1-829e-09f3c7fd28e8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="State\GameState">
+      <UniqueIdentifier>{aa505c99-d9b1-4985-88b1-307be8e8c728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State\MenuState">
+      <UniqueIdentifier>{c6b4b145-55e2-4cb3-b16a-ad76ec6d355c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -74,6 +80,12 @@
     </ClCompile>
     <ClCompile Include="StateCtrl.cpp">
       <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>State\GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuState.cpp">
+      <Filter>State\MenuState</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -112,6 +124,12 @@
     </ClInclude>
     <ClInclude Include="StateCtrl.h">
       <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>State\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuState.h">
+      <Filter>State\MenuState</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

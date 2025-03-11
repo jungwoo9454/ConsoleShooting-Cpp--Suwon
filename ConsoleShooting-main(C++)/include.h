@@ -19,6 +19,9 @@
 #include "State.h"
 #include "StateCtrl.h"
 
+#include "MenuState.h"
+#include "GameState.h"
+
 #include "GameMng.h"
 
 void Init();

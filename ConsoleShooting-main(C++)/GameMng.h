@@ -13,6 +13,8 @@ public:
 	GameMng();
 	~GameMng();
 
+	CStateCtrl stateCtrl;
+
 	Player player;
 	Bullet bullets[D_BULLET_MAX];
 	Enemy enemys[D_ENEMY_MAX];

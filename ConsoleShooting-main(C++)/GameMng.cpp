@@ -3,6 +3,11 @@
 GameMng::GameMng()
 {
 	createEnemyTime = 0;
+
+	stateCtrl.StateAdd(0, new MenuState);
+	stateCtrl.StateAdd(1, new GameState);
+
+	stateCtrl.StateChange(1);
 }
 
 GameMng::~GameMng()
@@ -11,38 +16,40 @@ GameMng::~GameMng()
 
 void GameMng::Update()
 {
-	player.Update();
-	for (int i = 0;i < D_BULLET_MAX;i++)
-		bullets[i].Update();
+	//player.Update();
+	//for (int i = 0;i < D_BULLET_MAX;i++)
+	//	bullets[i].Update();
 
-	for (int i = 0;i < D_ENEMY_MAX;i++)
-		enemys[i].Update();
+	//for (int i = 0;i < D_ENEMY_MAX;i++)
+	//	enemys[i].Update();
 
-	for (int i = 0;i < D_EFFECT_MAX;i++)
-		effects[i].Update();
+	//for (int i = 0;i < D_EFFECT_MAX;i++)
+	//	effects[i].Update();
 
-	if (createEnemyTime < GetTickCount())
-	{
-		createEnemyTime = GetTickCount() + 100;
-		CreateEnemy(rand() % 120, 0);
-	}
-
-	EnemyBulletCollision();
+	//if (createEnemyTime < GetTickCount())
+	//{
+	//	createEnemyTime = GetTickCount() + 100;
+	//	CreateEnemy(rand() % 120, 0);
+	//}
+	//EnemyBulletCollision();
+	stateCtrl.Update();
 }
 
 void GameMng::Draw()
 {
-	player.Draw();
-	for (int i = 0;i < D_BULLET_MAX;i++)
-		bullets[i].Draw();
+	//player.Draw();
+	//for (int i = 0;i < D_BULLET_MAX;i++)
+	//	bullets[i].Draw();
 
-	for (int i = 0;i < D_ENEMY_MAX;i++)
-		enemys[i].Draw();
+	//for (int i = 0;i < D_ENEMY_MAX;i++)
+	//	enemys[i].Draw();
 
-	for (int i = 0;i < D_EFFECT_MAX;i++)
-		effects[i].Draw();
+	//for (int i = 0;i < D_EFFECT_MAX;i++)
+	//	effects[i].Draw();
 
-	text.Draw();
+	//text.Draw();
+
+	stateCtrl.Draw();
 }
 
 void GameMng::EnemyBulletCollision()
