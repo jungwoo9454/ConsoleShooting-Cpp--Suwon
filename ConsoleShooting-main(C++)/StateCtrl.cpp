@@ -78,7 +78,7 @@ void CStateCtrl::Draw()
 
 void CStateCtrl::Init()
 {
-	for (int i = 0; i < D_STATE_MAX; i++)
+	for (int i = 0; i < STATE::MAX; i++)
 	{
 		m_pStates[i] = NULL;
 	}

@@ -6,7 +6,7 @@ public:
 	CState* m_pCurState;			// ÇöÀç state
 	CState* m_pPrevState;			// Àü state
 
-	CState* m_pStates[D_STATE_MAX];
+	CState* m_pStates[STATE::MAX];
 	
 public:
 	CStateCtrl();

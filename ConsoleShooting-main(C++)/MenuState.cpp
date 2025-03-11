@@ -14,6 +14,10 @@ void MenuState::Start()
 
 void MenuState::Update()
 {
+	if (GetAsyncKeyState(VK_F1))
+	{
+		GameMng::GetIns()->stateCtrl.StateChange(STATE::GAME);
+	}
 }
 
 void MenuState::Draw()
