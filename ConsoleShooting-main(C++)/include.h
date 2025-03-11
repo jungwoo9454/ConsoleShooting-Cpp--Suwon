@@ -16,6 +16,9 @@
 
 #include "Text.h"
 
+#include "State.h"
+#include "StateCtrl.h"
+
 #include "GameMng.h"
 
 void Init();

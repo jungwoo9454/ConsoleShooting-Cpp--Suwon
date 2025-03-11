@@ -134,6 +134,8 @@
     <ClCompile Include="GameMng.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="State.cpp" />
+    <ClCompile Include="StateCtrl.cpp" />
     <ClCompile Include="Text.cpp" />
     <ClCompile Include="Unit.cpp" />
   </ItemGroup>
@@ -146,6 +148,8 @@
     <ClInclude Include="include.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Singleton.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="StateCtrl.h" />
     <ClInclude Include="Text.h" />
     <ClInclude Include="Unit.h" />
   </ItemGroup>
