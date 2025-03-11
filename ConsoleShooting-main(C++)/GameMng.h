@@ -15,7 +15,6 @@ public:
 
 	CStateCtrl stateCtrl;
 
-
 	void Update();
 	void Draw();
 };

@@ -16,7 +16,7 @@ void MenuState::Update()
 {
 	if (GetAsyncKeyState(VK_F1))
 	{
-		GameMng::GetIns()->stateCtrl.StateChange(STATE::GAME);
+		GameMng::GetIns()->stateCtrl.StateChange(new GameState);
 	}
 }
 

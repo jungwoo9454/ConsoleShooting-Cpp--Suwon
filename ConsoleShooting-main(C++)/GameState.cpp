@@ -15,10 +15,6 @@ void GameState::Start()
 
 void GameState::Update()
 {
-	if (GetAsyncKeyState(VK_F2))
-	{
-		GameMng::GetIns()->stateCtrl.StateChange(STATE::MENU);
-	}
 
 	player.Update();
 	for (int i = 0;i < D_BULLET_MAX;i++)
@@ -36,6 +32,11 @@ void GameState::Update()
 		CreateEnemy(rand() % 120, 0);
 	}
 	EnemyBulletCollision();
+
+	if (GetAsyncKeyState(VK_F2))
+	{
+		GameMng::GetIns()->stateCtrl.StateChange(new MenuState);
+	}
 }
 
 void GameState::Draw()
