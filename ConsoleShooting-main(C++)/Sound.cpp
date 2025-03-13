@@ -14,7 +14,12 @@ bool Sound::LoadSound(std::string path, bool isloop)
 {
 	if (GameMng::GetIns()->system != nullptr)
 	{
-		return true;
+		FMOD_MODE mode = isloop ? FMOD_LOOP_NORMAL : FMOD_LOOP_OFF;
+
+		FMOD_RESULT result = GameMng::GetIns()->system->
+			createSound(path.c_str(), mode, nullptr, &sound);
+
+		return result == FMOD_OK;
 	}
 	else
 	{
@@ -24,10 +29,16 @@ bool Sound::LoadSound(std::string path, bool isloop)
 
 void Sound::Play()
 {
-
+	if (sound != nullptr && GameMng::GetIns()->system)
+	{
+		GameMng::GetIns()->system->playSound(sound, nullptr, false, &channel);
+	}
 }
 
 void Sound::Stop()
 {
-
+	if (channel)
+	{
+		channel->stop();
+	}
 }

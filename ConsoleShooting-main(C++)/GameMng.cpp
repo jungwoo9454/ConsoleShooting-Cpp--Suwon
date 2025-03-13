@@ -1,5 +1,4 @@
 #include "include.h"
-
 GameMng::GameMng()
 {
 	// dynamic_cast
@@ -26,6 +25,10 @@ void GameMng::Init()
 
 	bool result = backgroundSnd.LoadSound("Sound/backgroundMusic.mp3", true);
 	bool result2 = bulletSnd.LoadSound("Sound/bullet.wav", false);
+
+
+	if (result)
+		backgroundSnd.Play();
 
 
 	stateCtrl.StateChange(new MenuState);

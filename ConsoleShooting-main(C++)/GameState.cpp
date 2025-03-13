@@ -86,6 +86,7 @@ void GameState::CreateBullet(int x, int y)
 		if (bullets[i].isAlive == false)
 		{
 			bullets[i].Enable(x, y);
+			GameMng::GetIns()->bulletSnd.Play();
 			break;
 		}
 	}
