@@ -3,6 +3,8 @@
 #include <time.h>
 #include <string>
 #include <sstream>
+#include <fmod.hpp>
+
 #include "Define.h"
 #include "Singleton.h"
 
@@ -18,6 +20,8 @@
 
 #include "State.h"
 #include "StateCtrl.h"
+
+#include "Sound.h"
 
 #include "MenuState.h"
 #include "GameState.h"
